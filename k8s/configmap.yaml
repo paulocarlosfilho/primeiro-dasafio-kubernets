@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-config
+data:
+  NODE_ENV: "production"
+  # Variaveis para o Desafio 1
+  DESAFIO1_PORT: "3000"
+  # Variaveis para o Desafio 2
+  DESAFIO2_PORT: "3001"
+  # Variaveis para o Desafio 3
+  DESAFIO3_PORT: "3002"
+  # Conexoes de Banco e Cache
+  DB_HOST: "postgres-service"
+  DB_PORT: "5432"
+  DB_NAME: "desafiodb"
+  REDIS_HOST: "redis-service"
+  REDIS_PORT: "6379"
